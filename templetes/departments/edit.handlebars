@@ -1,0 +1,18 @@
+<h1>Edit a {{department.name}}</h1>
+<form action="/department/{{department._id}}?_method=PUT" method="POST">
+    <div>
+        <label for="">name</label>
+
+        <input type="text" class="form-control" name="name" value="{{department.name}}"/>
+    </div>
+    <div>
+        <label for="">code</label>
+        <input type="text" class="form-control" name="code"/ value="{{department.code}}">
+    </div>
+    <div>
+        <label for="">department</label>
+
+    <div>
+        <button class="btn btn-success" type="submit">Edit department</button> 
+    </div>
+</form>

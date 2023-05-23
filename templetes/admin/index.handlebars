@@ -1,0 +1,27 @@
+ <h1>admin</h1>
+<div class="my-2">
+    <a href="admin/create"> add new admin</a>
+    </div>
+{{#each admin}}
+
+<div class="d-flex justify-content-between"> <a href='/admin/{{_id}}'>
+    {{username}}
+    </a>
+    
+        <div>
+    <a href="/admin/{{_id}}/edit">   Edit</a>
+ 
+     |
+    
+
+
+   <form action='/admin/{{_id}}?_method=DELETE' method="post">
+  <input type="hidden" name="_method" value="DELETE">
+  <button type="submit">Delete resource</button>
+</form>
+    
+    </div>
+
+</div>
+{{/each}} 
+

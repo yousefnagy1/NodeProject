@@ -1,0 +1,16 @@
+<h1>Edit{{admin.username}}</h1>
+<form action='/admin/{{admin._id}}?_method=PUT' method="post">
+    <div>
+        <label for="">username</label>
+
+        <input type="text" class="form-control" name="username" value="{{admin.username}}"/>
+    </div>
+    <div>
+        <label for="">password</label>
+        <input type="password" class="form-control" name="password" value="{{admin.password}}"/>
+    </div>
+
+    <div>
+        <button class="btn btn-success" type="submit">Edit admin</button>
+    </div>
+</form>

@@ -1,0 +1,27 @@
+ <h1>doctor</h1>
+<div class="my-2">
+    <a href="doctor/create"> add new department</a>
+    </div>
+{{#each doctor}}
+
+<div class="d-flex justify-content-between"> <a href='/doctor/{{_id}}'>
+    {{username}}
+    </a>
+    
+        <div>
+    <a href="/doctor/{{_id}}/edit">   Edit</a>
+ 
+     |
+    
+
+
+   <form action='/doctor/{{_id}}?_method=DELETE' method="post">
+  <input type="hidden" name="_method" value="DELETE">
+  <button type="submit">Delete resource</button>
+</form>
+    
+    </div>
+
+</div>
+{{/each}} 
+
